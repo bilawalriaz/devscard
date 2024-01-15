@@ -9,31 +9,40 @@ const mainSectionData = {
     slug: 'profile',
     visible: true,
   },
-  image: import('@/assets/my-image.jpeg'),
-  fullName: 'Mark Freeman',
-  role: 'Senior React Developer',
+  image: import('@/assets/my-image.png'),
+  fullName: 'Bilawal Riaz',
+  role: 'Python Developer',
   details: [
-    { label: 'Phone', value: '605 475 6961', url: 'tel:605 475 6961' },
-    { label: 'Email', value: 'mark.freeman.dev@gmail.com', url: 'mailto:mark.freeman.dev@gmail.com' },
-    { label: 'From', value: 'Warsaw, Poland' },
-    { label: 'Salary range', value: '18 000 - 25 000 PLN' },
+    { label: 'Phone', value: '+44 7944324418', url: 'tel:+44 7944324418' },
+    { label: 'Email', value: 'inbox@bilawal.net', url: 'mailto:inbox@bilawal.net' },
+    { label: 'From', value: 'Manchester, Oldham' },
+    { label: 'Salary range', value: '£50,000 - £80,000' },
   ],
   pdfDetails: [
-    { label: 'Phone', value: '605 475 6961' },
-    { label: 'Email', value: 'mark.freeman.dev@gmail.com' },
-    { label: 'LinkedIn', value: '/in/mark-freeman', url: 'https://linkedin.com' },
-    { label: 'GitHub', value: '/mark-freeman', url: 'https://github.com' },
-    { label: 'Website', value: 'mark-freeman-personal-website.com', url: '/', fullRow: true },
+    { label: 'Phone', value: '+44 7944324418' },
+    { label: 'Email', value: 'inbox@bilawal.net' },
+    { label: 'LinkedIn', value: '/in/bilawalriaz', url: 'https://linkedin.com' },
+    { label: 'GitHub', value: '/bilawalriaz', url: 'https://github.com' },
+    { label: 'Website', value: 'hyperflash.uk', url: '/', fullRow: true },
   ],
   description:
-    'Lorem ipsum dolor sit amet, consectetur **adipiscing elit**. In sodales ac dui at *vestibulum*. In condimentum metus id dui tincidunt, in blandit mi [vehicula](/). Nulla lacinia, erat sit amet elementum vulputate, lectus mauris volutpat mi, vitae accumsan metus elit ut nunc. Vestibulum lacinia enim eget eros fermentum scelerisque. Proin augue leo, posuere ut imperdiet vitae, fermentum eu ipsum. Sed sed neque sagittis, posuere urna nec, commodo leo. Pellentesque posuere justo vitae massa volutpat maximus.',
-  tags: [{ name: 'Open for freelance' }, { name: 'Available for mentoring' }, { name: 'Working on side project' }],
+    "Experienced IT professional with a comprehensive background in IT infrastructure, cloud, bioinformatics and Python.\
+    Demonstrated success in managing and executing large-scale\
+    projects to satisfy business requirements. Pursuing a dynamic role in the IT/Cyber-Security sector to apply my\
+    expertise and problem-solving acumen for substantial impact. \n \
+    'Jack of all trades, master of none... oftentimes better than master of one.'",
+  tags: [{ name: 'Open for freelance' }, { name: 'Working on side project (Youtube Summariser)' }],
   action: {
     label: 'Download CV',
     url: '/cv.pdf',
-    downloadedFileName: 'CV-Mark_Freeman.pdf',
+    downloadedFileName: 'CV-Bilawal_Riaz.pdf',
   },
-  links: [facebook({ url: '#' }), github({ url: '#' }), linkedin({ url: '#' }), twitter({ url: '#' })],
+  links: [
+    facebook({ url: 'https://hyperflash.uk' }),
+    github({ url: 'https://github.com/bilawalriaz' }),
+    linkedin({ url: 'https://uk.linkedin.com/in/bilawalriaz' }),
+    twitter({ url: 'https://twitter.com/ssjbillz' }),
+  ],
 } as const satisfies ReadonlyDeep<MainSection>;
 
 export default mainSectionData;
