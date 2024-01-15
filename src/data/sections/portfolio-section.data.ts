@@ -31,7 +31,7 @@ const portfolioSectionData = {
   },
   projects: [
     {
-      name: 'Golden Bulls',
+      name: 'Youtube Summariser',
       image: import('@/assets/portfolio/project-1.jpeg'),
       dates: [new Date('2020-03'), null],
       details: [
@@ -58,7 +58,7 @@ const portfolioSectionData = {
       links: [mockups({ url: '#' }), demo({ url: '#' })],
     },
     {
-      name: 'TruQuest',
+      name: 'Oldham Food Spots',
       image: import('@/assets/portfolio/project-2.jpeg'),
       dates: [new Date('2019-06'), new Date('2020-02')],
       details: [
