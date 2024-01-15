@@ -31,7 +31,7 @@ const mainSectionData = {
     projects to satisfy business requirements. Pursuing a dynamic role in the IT/Cyber-Security sector to apply my\
     expertise and problem-solving acumen for substantial impact. \n \
     'Jack of all trades, master of none... oftentimes better than master of one.'",
-  tags: [{ name: 'Open for freelance' }, { name: 'Working on side project (Youtube Summariser)' }],
+  tags: [{ name: 'Open for freelance and contract roles' }, { name: 'Working on side project (Youtube Summariser)' }],
   action: {
     label: 'Download CV',
     url: '/cv.pdf',

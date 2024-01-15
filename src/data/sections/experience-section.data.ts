@@ -12,7 +12,7 @@ import {
   reactQuery,
   tailwindCss,
   typescript,
-  vue,
+  python,
 } from '../helpers/skills';
 
 const experienceSectionData = {
@@ -24,10 +24,10 @@ const experienceSectionData = {
   },
   jobs: [
     {
-      role: 'Senior front-end developer',
-      company: 'Google',
+      role: 'IT Infrastructure Engineer',
+      company: 'dotdigital',
       image: import('@/assets/logos/google-logo.jpg'),
-      dates: [new Date('2020-02'), null],
+      dates: [new Date('2022-09'), null],
       description: `
         - In tristique vulputate augue vel egestas.
         - Quisque ac imperdiet tortor, at lacinia ex.
@@ -74,7 +74,7 @@ const experienceSectionData = {
       `,
       tagsList: {
         title: 'Technologies',
-        tags: [vue(), tailwindCss(), pnpm()],
+        tags: [python(), tailwindCss(), pnpm()],
       },
       links: [twitter({ url: '#' }), github({ url: '#' })],
     },

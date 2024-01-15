@@ -102,6 +102,13 @@ export const pnpm = createSkillFactory({
   url: 'https://pnpm.io/',
 });
 
+export const sqlite3 = createSkillFactory({
+  name: 'SQLite3',
+  icon: 'simple-icons:sqlite',
+  iconColor: '#4169E1',
+  url: 'https://www.sqlite.org/',
+});
+
 export const postgreSql = createSkillFactory({
   name: 'PostgreSQL',
   icon: 'simple-icons:postgresql',
@@ -158,9 +165,9 @@ export const typescript = createSkillFactory({
   url: 'https://www.typescriptlang.org/',
 });
 
-export const vue = createSkillFactory({
-  name: 'Vue.js',
-  icon: 'simple-icons:vuedotjs',
+export const python = createSkillFactory({
+  name: 'Python',
+  icon: 'simple-icons:python',
   iconColor: '#4FC08D',
-  url: 'https://vuejs.org/',
+  url: 'https://python.org/',
 });

@@ -1,22 +1,16 @@
 import type { SkillsSection } from '@/types/sections/skills-section.types';
 import type { ReadonlyDeep } from 'type-fest';
 import {
-  apolloGraphql,
+  react,
   astro,
-  chakraUi,
   cypress,
-  eslint,
   firebase,
   mongoDb,
-  nestJs,
-  pnpm,
   postgreSql,
-  prettier,
-  react,
-  sass,
   supabase,
   tailwindCss,
-  typescript,
+  python,
+  sqlite3,
 } from '../helpers/skills';
 
 const skillsSectionData = {
@@ -30,48 +24,38 @@ const skillsSectionData = {
     {
       title: 'I already know',
       skills: [
-        react({
-          level: 5,
-          description:
-            'Proin ut erat sed massa tempus suscipit. Mauris efficitur nunc sem, nec scelerisque ligula bibendum ut.',
-        }),
-        typescript({
+        python({
           level: 4,
-          description: 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.',
+          description: 'I love Python so much. Favourite libraries: requests, multiprocessing, SQLite3',
         }),
-        sass({
+        sqlite3({
           level: 4,
-          description: 'Nulla interdum pellentesque ultricies. Ut id eros commodo, ultrices ligula eu, elementum ante.',
+          description: 'Used for most of my projects. Lightweight, powerful and easy to backup and replicate',
         }),
-        chakraUi({ level: 5 }),
-        tailwindCss({ level: 3 }),
-        prettier({ level: 5 }),
-        eslint({
-          level: 4,
-          description:
-            'Nulla tempor turpis at vehicula pharetra. Vestibulum tellus tortor, commodo et suscipit id, lobortis id nunc.',
+        tailwindCss({
+          level: 3,
+          description: 'Used for almost all of my projects. Used to prefer Bootstrap.',
         }),
-        nestJs({
+
+        postgreSql({ level: 2 }),
+        mongoDb({ level: 2 }),
+        firebase({ level: 3, description: 'Used to handle auth for https://foodspots.uk' }),
+        supabase({
           level: 3,
           description:
-            'Praesent feugiat ultricies iaculis. In posuere vehicula odio, sed consequat velit porta viverra.',
+            'Briefly used for Youtube Summariser and other projects. Easy to get started with but ended up migrating to own SQLite3 instance for cost-effectiveness.',
         }),
-        postgreSql({ level: 2 }),
-        mongoDb({ level: 1 }),
-        firebase({ level: 1 }),
-        pnpm({ level: 3 }),
       ],
     },
     {
       title: 'I want to learn',
-      skills: [apolloGraphql(), astro(), supabase(), cypress()],
+      skills: [react()],
     },
     {
       title: 'I speak',
       skills: [
-        { icon: 'circle-flags:pl', name: 'Polish - native' },
-        { icon: 'circle-flags:us', name: 'English - C1' },
-        { icon: 'circle-flags:es-variant', name: 'Spanish - B1' },
+        { icon: 'circle-flags:gb', name: 'English - Native' },
+        { icon: 'circle-flags:ur', name: 'Punjabi/Urdu' },
       ],
     },
   ],
